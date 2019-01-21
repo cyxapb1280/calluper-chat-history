@@ -1,0 +1,52 @@
+html, body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000;
+    font-weight: 400;
+    height: 100%;
+}
+
+
+.messages-container {
+    max-width: 700px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .06);
+    overflow-y: auto;
+    height: 100%;
+    min-height: 100%;
+}
+
+.messages-container .messages {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 15px;
+    list-style: none;
+}
+
+.messages-container .messages .message {
+    border-radius: 5px;
+    width: 70%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .06);
+    border: 1px solid hsla(0, 0%, 87%, .4);
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.messages-container .messages .message.message-right {
+    align-self: flex-end;
+    background-color: #bfdef5;
+    border: none;
+}
+
+.messages-container .messages .message .message-time {
+    text-align: right;
+    display: block;
+}
+
+.messages-container .messages .message .message-text {
+    margin: 0;
+    padding: 0;
+}
